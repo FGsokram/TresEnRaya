@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>3 en raya</title>
+</head>
+
+<body>
+
+    <h1>3 en Raya</h1>
+    <div class="containerModos">
+        <section id="modosJuego">
+            <label for="numeroFichas">Número de Fichas:</label>
+            <select id="numeroFichas">
+                <option value="6">6 Fichas</option>
+                <option value="9">9 Fichas</option>
+            </select>
+
+            <label for="oponente">Oponente:</label>
+            <select id="oponente">
+                <option value="otroJugador">Otro Jugador</option>
+                <option value="iaAleatoria">IA Aleatoria</option>
+                <option value="iaEstrategica">IA Estratégica</option>
+            </select>
+
+            <button id="empezarPartida">Empezar Partida</button>
+        </section>
+    </div>
+    <div class="containerPrincipal">
+        <div class="conatinerTablero">
+            <div class="tablero oculto" id="tablero"></div>
+
+        </div>
+        <div class="conatinerInfo">
+            <div class="contenedor">
+                <p id="mensaje"></p>
+                <p id="mensajeTurno"></p>
+            </div>
+            <div class="containerHistorial">
+                <div id="tiempoPartida"></div>
+                <div id="tiempoTurno"></div>
+                <div id="estadisticas">
+                    <h2>Estadísticas</h2>
+                    <p id="jugador1Stats">Jugador 1: Victorias - Empates - Derrotas</p>
+                    <p id="jugador2Stats">Jugador 2: Victorias - Empates - Derrotas</p>
+                    <button id="reiniciarStats">Reiniciar Estadísticas</button>
+                </div>
+                <button id="reiniciarPagina">Reiniciar</button>
+            </div>
+        </div>
+    </div>
+    <script src="funciones.js"></script>
+</body>
+
+</html>

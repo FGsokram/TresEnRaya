@@ -1,0 +1,137 @@
+/* Estilo general */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerModos {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.containerTablero {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.containerHistorial {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Encabezado */
+h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Botones */
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Tablero */
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
+    background-color: #333;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.casilla {
+    width: 100px;
+    height: 100px;
+    background-color: #666;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.casilla:hover {
+    background-color: #999;
+}
+
+/* Mensajes */
+#mensaje {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#mensajeTurno {
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Estadísticas */
+#estadisticas {
+    margin-top: 20px;
+}
+
+/* Reiniciar estadísticas */
+#reiniciarStats {
+    background-color: #f44336;
+}
+
+#reiniciarStats:hover {
+    background-color: #d32f2f;
+}
+
+.containerPrincipal {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .containerPrincipal {
+        grid-template-columns: 1fr;
+    }
+
+    #modosJuego{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    select option {
+        font-size: 12px; /* Tamaño de fuente más pequeño */
+    }
+    label{
+        margin: 10px;
+    }
+
+  
+}
